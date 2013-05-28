@@ -19,8 +19,12 @@
     },
     "licenses": [
         {
-            "type": "GPLv3, MIT",
-            "url": "https://github.com/doptrois/walidate/blob/master/LICENCE"
+            "type": "GPLv3",
+            "url": "https://github.com/doptrois/walidate/blob/master/GPL-LICENSE.txt"
+        },
+        {
+            "type": "MIT",
+            "url": "https://github.com/doptrois/walidate/blob/master/MIT-LICENSE.txt"
         }
     ],
     "homepage": "http://jquery.dop-trois.org/walidate/",
