@@ -1,0 +1,32 @@
+{
+    "name": "Walidate",
+    "title": "jQuery Walidate",
+    "description": "A form validation plugin that works on every html form without changing anything in your existing markup.",
+    "keywords": [
+        "validation",
+        "html5",
+        "regular expression",
+        "simple",
+        "easy",
+        "form",
+        "contact",
+        "callback"
+    ],
+    "version": "2.4.4",
+    "author": {
+        "name": "Michael Fischer",
+        "url": "https://www.dop-trois.org"
+    },
+    "licenses": [
+        {
+            "type": "GPLv3, MIT",
+            "url": "https://github.com/doptrois/walidate/blob/master/LICENCE"
+        }
+    ],
+    "homepage": "http://jquery.dop-trois.org/walidate/",
+    "docs": "http://jquery.dop-trois.org/walidate/",
+    "download": "https://github.com/doptrois/walidate",
+    "dependencies": {
+        "jquery": ">=1.8"
+    }
+}
