@@ -33,6 +33,6 @@
     "docs": "http://jquery.dop-trois.org/walidate/",
     "download": "https://github.com/doptrois/walidate",
     "dependencies": {
-        "jquery": ">=1.8"
+        "jquery": ">=1.7.1"
     }
 }
