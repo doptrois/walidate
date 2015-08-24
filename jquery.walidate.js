@@ -1,6 +1,6 @@
 /**************************************************************************
  **  jQuery Walidate v.2.4.5 (STABLE)
- **  Release date: 28. May 2013
+ **  Release date: 24. August 2015
  **  Copyright (c) 2013 Michael Fischer
  **  licensed under GPL v.3.0 & MIT
  **
