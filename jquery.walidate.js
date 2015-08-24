@@ -421,7 +421,6 @@
                         } else if (settings.required) {
                             that.removeClass($.props.validClass).addClass($.props.errorClass);
                         } else {
-                            console.log("was drin");
                             if (checkExp(value)) {
                                 that.removeClass($.props.errorClass).addClass($.props.validClass);
                             } else if (!checkExp(value)) {
