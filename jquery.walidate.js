@@ -1,5 +1,5 @@
 /**************************************************************************
- **  jQuery Walidate v.2.4.4 (STABLE)
+ **  jQuery Walidate v.2.4.5 (STABLE)
  **  Release date: 28. May 2013
  **  Copyright (c) 2013 Michael Fischer
  **  licensed under GPL v.3.0 & MIT
@@ -14,6 +14,9 @@
  *
  *   Regular Expressions Snippets can be found here: http://regexlib.com
  *
+ *   Bugfix from 2.4.4 to 2.4.5
+ *    - Issue nr. #1 closed. Check for regexp even if it's not a required input-field.
+ * 
  *   Bugfix from 2.4.3.1 to 2.4.4:
  *    - added missing type="tel" support, thx to Patrick Doll
  *    - Bugfix for jQuery 1.8+, now compatible! thx for the error note to Patrick Doll
@@ -418,7 +421,17 @@
                         } else if (settings.required) {
                             that.removeClass($.props.validClass).addClass($.props.errorClass);
                         } else {
-                            that.removeClass($.props.errorClass).removeClass($.props.validClass);
+                            console.log("was drin");
+                            if (checkExp(value)) {
+                                that.removeClass($.props.errorClass).addClass($.props.validClass);
+                            } else if (!checkExp(value)) {
+                                that.removeClass($.props.validClass).addClass($.props.errorClass);
+                            } else {
+                                that.removeClass($.props.errorClass).removeClass($.props.validClass);
+                            }
+
+
+                            
                         }
                     /**
                      * Wenn RegEx nicht definiert
